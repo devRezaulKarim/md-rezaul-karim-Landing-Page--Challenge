@@ -2,6 +2,7 @@ import Experience from "./Experience";
 import Banner from "./Banner";
 import BuyEasyStep from "./BuyEasyStep";
 import Types from "./Types";
+import Products from "./Products";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <BuyEasyStep />
       <Types />
       <Experience />
+      <Products />
     </div>
   );
 };

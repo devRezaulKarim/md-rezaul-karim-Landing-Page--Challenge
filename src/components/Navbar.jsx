@@ -26,7 +26,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="flex gap-[20px]">
+      <div className="flex gap-[20px] text-2xl">
         <NavLink to={"/cart"}>
           <FaCartShopping />
         </NavLink>
