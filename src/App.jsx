@@ -1,5 +1,15 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
 const App = () => {
-  return <div>Initial environment setup completed</div>;
+  return (
+    <main>
+      <Navbar />
+      <div>
+        <Outlet />
+      </div>
+    </main>
+  );
 };
 
 export default App;
