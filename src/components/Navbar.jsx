@@ -17,7 +17,7 @@ const Navbar = () => {
       <div>
         <img src={logo} alt=" Eye Glass logo" />
       </div>
-      <ul className="flex gap-[30px] font-poppins">
+      <ul className="flex gap-[30px] font-josefin">
         {navigationLinksName.map((navLink) => (
           <li key={navLink}>
             <NavLink to={`/${navLink.replace(" ", "").toLowerCase()}`}>

@@ -1,3 +1,4 @@
+import Experience from "./Experience";
 import Banner from "./Banner";
 import BuyEasyStep from "./BuyEasyStep";
 import Types from "./Types";
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner />
       <BuyEasyStep />
       <Types />
+      <Experience />
     </div>
   );
 };

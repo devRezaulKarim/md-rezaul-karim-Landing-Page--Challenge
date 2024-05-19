@@ -10,7 +10,7 @@ const Banner = () => {
         </div>
 
         <div className="absolute">
-          <h1 className="font-poppins text-5xl font-bold w-[556px] mb-[52px]">
+          <h1 className="font-josefin text-5xl font-bold w-[556px] mb-[52px]">
             Personalized Eyeglass Shopping
           </h1>
           <Button icon={true}>Buy Now</Button>

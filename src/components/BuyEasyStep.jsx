@@ -35,7 +35,7 @@ const BuyEasyStep = () => {
           <div className=" bg-[#fed29c] w-[130px] aspect-square rounded-full grid place-items-center text-4xl absolute top-0 -translate-y-1/2">
             {step.icon}
           </div>
-          <h5 className="font-bold font-poppins mb-[10px]">{step.title}</h5>
+          <h5 className="font-bold font-josefin mb-[10px]">{step.title}</h5>
           <p className="text-xs text-gray-500">{step.text}</p>
         </div>
       ))}

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
       },
       backgroundColor: {
         "dark-gray": "#383838",
