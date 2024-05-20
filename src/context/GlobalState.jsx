@@ -15,6 +15,7 @@ const CartProvider = ({ children }) => {
       const isAlreadyInCart = prevItems.find(
         (preItem) => preItem.id === item.id
       );
+      //checking the items already in cart or not, if the item is already in cart then just increase the quantity
       if (isAlreadyInCart) {
         return prevItems.map((prevItem) => {
           if (prevItem.id === item.id) {
@@ -41,13 +42,43 @@ const CartProvider = ({ children }) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
   };
 
-  const clearCart = () => {
-    setCartItems([]);
+  const increaseQuantity = (itemId) => {
+    setCartItems((prevItems) =>
+      prevItems.map((item) => {
+        if (item.id === itemId) {
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+          };
+        }
+        return item;
+      })
+    );
+  };
+
+  const decreaseQuantity = (itemId) => {
+    setCartItems((prevItems) =>
+      prevItems.map((item) => {
+        if (item.id === itemId) {
+          return {
+            ...item,
+            quantity: item.quantity - 1,
+          };
+        }
+        return item;
+      })
+    );
   };
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addItemToCart, removeItemFromCart, clearCart }}
+      value={{
+        cartItems,
+        addItemToCart,
+        removeItemFromCart,
+        increaseQuantity,
+        decreaseQuantity,
+      }}
     >
       {children}
     </CartContext.Provider>
