@@ -8,9 +8,12 @@ import { useCart } from "../context/GlobalState";
 
 const ProductCard = ({ product }) => {
   const { addItemToCart } = useCart();
+
   const handleAddToCart = (product) => {
     addItemToCart(product);
   };
+
+  //Slider settings
   const settings = {
     dots: true,
     infinite: true,

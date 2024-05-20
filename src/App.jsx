@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const App = () => {
   const [isScrolledDown, setIsScrollDown] = useState(false);
 
+  // detecting the scroll event
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
