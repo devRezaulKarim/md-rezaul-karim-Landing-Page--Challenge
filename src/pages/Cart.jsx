@@ -1,5 +1,5 @@
 import { useCart } from "../context/GlobalState";
-import CartCard from "./CartCard";
+import CartCard from "../components/CartCard";
 
 const Cart = () => {
   const { cartItems } = useCart();
