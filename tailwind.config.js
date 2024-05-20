@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
+      },
+      backgroundColor: {
+        "dark-gray": "#383838",
       },
     },
   },
