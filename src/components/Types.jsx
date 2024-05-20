@@ -3,6 +3,7 @@ import johnJacobs from "../assets/John-Jacobs.png";
 import tommyHilfiger from "../assets/Tommy-Hilfiger.png";
 import vincentChase from "../assets/Vincent-Chase.png";
 import TypeCard from "./TypeCard";
+
 const Types = () => {
   const glassTypesForLeft = [
     {

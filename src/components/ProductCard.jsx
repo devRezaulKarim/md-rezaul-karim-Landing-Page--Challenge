@@ -36,22 +36,20 @@ const ProductCard = ({ product }) => {
         <Slider {...settings}>
           <div className="h-[430px] w-full">
             <div className="h-full grid place-items-center">
-              <img className="" src={product.img} alt="" />
+              <img className="" src={product.img} alt="Product image" />
             </div>
           </div>
           <div className="h-[430px] w-full">
             <div className="h-full grid place-items-center">
-              <img className="" src={product.img} alt="" />
+              <img className="" src={product.img} alt="Product image" />
             </div>
           </div>
           <div className="h-[430px] w-full">
             <div className="h-full grid place-items-center">
-              <img className="" src={product.img} alt="" />
+              <img className="" src={product.img} alt="Product image" />
             </div>
           </div>
         </Slider>
-
-        {/* <img src={img} alt="" /> */}
       </div>
       <p className="text-3xl">{product.title}</p>
       <p className="mt-[10px] mb-[20px] text-lg flex items-center gap-2">

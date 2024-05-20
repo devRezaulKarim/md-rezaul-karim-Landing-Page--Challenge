@@ -58,6 +58,8 @@ const Products = () => {
       img: occhiali,
     },
   ];
+
+  // handling Latest Special Best sell product category rendering
   useEffect(() => {
     if (selectedCategory === "Latest") {
       console.log("first");
@@ -78,6 +80,7 @@ const Products = () => {
       setShowingProducts(products);
     }
   }, [selectedCategory]);
+
   return (
     <div className="max-w-[1321px] mx-auto py-[150px] font-josefin px-4">
       <h1 className="text-4xl font-bold mb-5">Our Products</h1>

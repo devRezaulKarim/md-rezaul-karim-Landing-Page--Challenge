@@ -8,7 +8,7 @@ const CartCard = ({ item: { id, img, title, currentPrice, quantity } }) => {
     <div className="flex justify-between py-4 min-h-24">
       <div className="flex gap-4">
         <div className="w-16 lg:w-32 bg-[#eaeaea] p-2 rounded-lg grid place-items-center">
-          <img src={img} alt="" />
+          <img src={img} alt="Product image" />
         </div>
 
         <div className="flex flex-col justify-between">
