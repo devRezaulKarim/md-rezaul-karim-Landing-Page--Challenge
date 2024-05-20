@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import BuyEasyStep from "./BuyEasyStep";
 import Types from "./Types";
 import Products from "./Products";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Types />
       <Experience />
       <Products />
+      <Footer />
     </div>
   );
 };

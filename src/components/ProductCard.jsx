@@ -17,9 +17,9 @@ const ProductCard = ({
       <div className="bg-[#f7f7f7] h-[475px] grid place-items-center px-[35px] mb-[30px]">
         <img src={img} alt="" />
       </div>
-      <p className="text-2xl">{title}</p>
+      <p className="text-3xl">{title}</p>
       <p className="mt-[10px] mb-[20px] text-lg flex items-center gap-2">
-        <span className="font-bold">${currentPrice}</span>
+        <span className="font-bold text-lg">${currentPrice}</span>
         {previousPrice && (
           <span className="text-gray-400 line-through">${previousPrice}</span>
         )}
