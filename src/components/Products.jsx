@@ -58,18 +58,18 @@ const Products = () => {
   ];
 
   return (
-    <div className="max-w-[1321px] mx-auto py-[150px] font-josefin ">
+    <div className="max-w-[1321px] mx-auto py-[150px] font-josefin px-4">
       <h1 className="text-4xl font-bold mb-5">Our Products</h1>
 
-      <div className="flex justify-between items-center mb-20">
+      <div className="md:flex justify-between items-center mb-20">
         <p className="lg:w-[445px] text-xl text-gray-600">
           Experience crystal clear vision and elevated style with our premium
           collection of eyeglasses.
         </p>
-        <div className="flex items-center">
+        <div className="flex items-center mt-8 md:mt-0">
           {productCategories.map((cat) => (
             <button
-              className={`rounded border px-5 py-1 duration 200 ${
+              className={`rounded border px-5 py-1 duration 200 whitespace-nowrap ${
                 selectedCategory === cat ? "border-black" : "border-transparent"
               }`}
               key={cat}

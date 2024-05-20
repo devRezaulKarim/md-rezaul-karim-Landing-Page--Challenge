@@ -29,7 +29,7 @@ const Types = () => {
     },
   ];
   return (
-    <div className="max-w-[1321px] mx-auto pb-[150px] lg:flex gap-[35px]">
+    <div className="max-w-[1321px] mx-auto pb-20 md:pb-[150px] lg:flex gap-[35px] px-4 lg:px-0">
       <div className="flex flex-col gap-[35px]">
         {glassTypesForLeft.map((type) => (
           <TypeCard key={type.title} type={type} />

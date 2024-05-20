@@ -6,11 +6,11 @@ const FooterLinks = ({ links }) => {
   const { title, footerLinks } = links;
   return (
     <div className="pt-2 mt-8 lg:mt-0">
-      <h3 className="text-base lg:text-xl font-bold">{title}</h3>
+      <h3 className="text-base md:text-2xl lg:text-xl font-bold">{title}</h3>
       <ul className="mt-4 space-y-4">
         {footerLinks.map((link) => (
           <li key={link.name}>
-            <Link className="text-sm lg:text-base" href={link.url}>
+            <Link className="text-sm md:text-lg lg:text-base" href={link.url}>
               {link.name}
             </Link>
           </li>
