@@ -3,9 +3,12 @@ import logo from "../assets/Logo.png";
 import { FaCartShopping, FaUser, FaXmark, FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
+import { useCart } from "../context/GlobalState";
 
 const Navbar = () => {
+  const { cartItems } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navigationLinksName = [
     "Home",
     "About Us",
@@ -33,8 +36,13 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="flex gap-[20px] text-2xl">
-          <NavLink to={"/cart"}>
+          <NavLink className={"relative"} to={"/cart"}>
             <FaCartShopping />
+            {cartItems.length > 0 && (
+              <span className="absolute top-0 -translate-y-1/2 right-0 translate-x-1/2 text-base bg-red-500 px-1 rounded-full font-bold text-white">
+                {cartItems.length}
+              </span>
+            )}
           </NavLink>
           <NavLink to={"/login"}>
             <FaUser />
