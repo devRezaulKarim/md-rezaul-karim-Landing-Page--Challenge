@@ -94,7 +94,7 @@ const Footer = () => {
           <p className="md:text-lg">
             Copyright © 2023 All rights reserved by Eyeglass
           </p>
-          <p className="flex gap-[30px] mt-4 md:mt-0 md:text-lg">
+          <p className="flex justify-center gap-[30px] mt-4 md:mt-0 md:text-lg">
             <Link to={"#"}>Privacy Policy</Link>
             <Link to={"#"}>Terms of service</Link>
           </p>

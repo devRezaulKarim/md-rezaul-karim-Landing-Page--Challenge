@@ -23,7 +23,10 @@ const Navbar = () => {
         <ul className="hidden lg:flex gap-[30px] font-josefin  ">
           {navigationLinksName.map((navLink) => (
             <li key={navLink}>
-              <NavLink to={`/${navLink.replace(" ", "").toLowerCase()}`}>
+              <NavLink
+                className={"text-lg"}
+                to={`/${navLink.replace(" ", "").toLowerCase()}`}
+              >
                 {navLink}
               </NavLink>
             </li>

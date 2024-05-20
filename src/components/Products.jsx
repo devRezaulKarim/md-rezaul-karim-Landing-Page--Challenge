@@ -66,10 +66,10 @@ const Products = () => {
           Experience crystal clear vision and elevated style with our premium
           collection of eyeglasses.
         </p>
-        <div className="flex items-center mt-8 md:mt-0">
+        <div className="flex items-center mt-8 md:mt-0 justify-center">
           {productCategories.map((cat) => (
             <button
-              className={`rounded border px-5 py-1 duration 200 whitespace-nowrap ${
+              className={`rounded border px-5 py-1 duration 200 whitespace-nowrap md:text-xl lg:text-base ${
                 selectedCategory === cat ? "border-black" : "border-transparent"
               }`}
               key={cat}
