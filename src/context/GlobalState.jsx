@@ -60,10 +60,12 @@ const CartProvider = ({ children }) => {
     setCartItems((prevItems) =>
       prevItems.map((item) => {
         if (item.id === itemId) {
-          return {
-            ...item,
-            quantity: item.quantity - 1,
-          };
+          if (item.quantity > 1) {
+            return {
+              ...item,
+              quantity: item.quantity - 1,
+            };
+          }
         }
         return item;
       })
