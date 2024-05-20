@@ -16,6 +16,7 @@ const Products = () => {
       title: "Bravo Sunglasses",
       previousPrice: 150,
       currentPrice: 100,
+      discount: 10,
       img: bravo,
     },
     {
@@ -23,6 +24,7 @@ const Products = () => {
       title: "Vincent Chase",
       previousPrice: 150,
       currentPrice: 120,
+      discount: 10,
       img: vincent,
     },
     {
@@ -36,6 +38,7 @@ const Products = () => {
       title: "Tommy Hilfiger",
       previousPrice: 150,
       currentPrice: 130,
+      discount: 10,
       img: tommy,
     },
     {
@@ -49,16 +52,17 @@ const Products = () => {
       title: "Occhiali",
       previousPrice: 150,
       currentPrice: 110,
+      discount: 10,
       img: occhiali,
     },
   ];
 
   return (
-    <div className="max-w-[1321px] mx-auto py-[150px]">
-      <h1 className="text-4xl font-bold font-josefin mb-5">Our Products</h1>
+    <div className="max-w-[1321px] mx-auto py-[150px] font-josefin ">
+      <h1 className="text-4xl font-bold mb-5">Our Products</h1>
 
       <div className="flex justify-between items-center mb-20">
-        <p className="lg:w-[445px]">
+        <p className="lg:w-[445px] text-xl text-gray-600">
           Experience crystal clear vision and elevated style with our premium
           collection of eyeglasses.
         </p>

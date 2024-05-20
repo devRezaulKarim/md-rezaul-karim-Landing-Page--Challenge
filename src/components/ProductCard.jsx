@@ -1,9 +1,19 @@
 /* eslint-disable react/prop-types */
+import { FaRegHeart } from "react-icons/fa6";
+
 const ProductCard = ({
-  product: { img, title, previousPrice, currentPrice },
+  product: { img, title, previousPrice, currentPrice, discount },
 }) => {
   return (
-    <div className="font-josefin h-[636px] hover:-translate-y-5 duration-200">
+    <div className="font-josefin h-[636px] hover:-translate-y-5 duration-200 relative rounded">
+      {discount && (
+        <span className="text-sm font-bold px-[17px] py-[20px]  rounded-full bg-[#fed29c] absolute top-8 left-8 grid place-items-center">
+          {discount}%
+        </span>
+      )}
+      <span className="text-2xl p-[15px] border-2 border-black rounded-full absolute top-8 right-8">
+        <FaRegHeart />
+      </span>
       <div className="bg-[#f7f7f7] h-[475px] grid place-items-center px-[35px] mb-[30px]">
         <img src={img} alt="" />
       </div>
